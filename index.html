@@ -1,1 +1,40 @@
-Hello Fourteen
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+body {
+  background-color: #000;
+  width: 90%;
+  margin: 2em auto;
+  font-family: 'Inconsolata', monospace;
+  font: monospace;
+  font-size: 30px;
+}
+.container > div {
+  height: 256px;
+  border-radius: 0px;
+  background-color: #888;
+  border: 1px solid #fff;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 256px);
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 0px;
+}
+</style>
+<div>
+  <div class="container">
+    <div>One</div>
+    <div>Two</div>
+    <div>Three</div>
+    <div>Four</div>
+    <div>Five</div>
+    <div>Six</div>
+    <div>Seven</div>
+  </div>
+</div>
